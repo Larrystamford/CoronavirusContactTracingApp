@@ -1,0 +1,26 @@
+.Navbar {
+  height: 80px;
+}
+
+.defaultInputs {
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  bottom: 0;
+}
+
+.searchAndAdd {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+.newUserTable {
+  position: absolute;
+  top: 80px;
+  right: 140px;
+  bottom: 0;
+  height: 300px;
+  width: 300px;
+}

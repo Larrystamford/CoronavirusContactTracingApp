@@ -1,0 +1,70 @@
+.flexBoxDiv {
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.pageContainer {
+  height: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+svg.custom .node circle {
+  fill: #f3f3ff;
+  stroke: #2593b8;
+  stroke-width: 1.5px;
+}
+
+svg.custom .node text {
+  font-size: 14px;
+  background-color: #444;
+  fill: black;
+  font-weight: bold;
+}
+
+svg.custom .node {
+  cursor: pointer;
+}
+
+svg.custom path.link {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.Quarantine {
+  fill: orange;
+  stroke: orange;
+  stroke-width: 1.2px;
+}
+
+.Normal {
+  fill: #2593b8;
+  stroke: #2593b8;
+  stroke-width: 1.2px;
+}
+
+.Infected {
+  fill: red;
+  stroke: red;
+  stroke-width: 1.2px;
+}
+
+#submitButton {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
