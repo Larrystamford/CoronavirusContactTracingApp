@@ -42,12 +42,14 @@ export const SearchName = ({ onAdd }) => {
                 readOnly: true
               }}
             />
-
+            <div className="statusField">
+            Status
             <Field as="select" name="currentStatus">
               <option value="Normal">Normal</option>
               <option value="Quarantine">Quarantine</option>
               <option value="Infected">Infected</option>
             </Field>
+            </div>
           </div>
           <div className="searchAndAdd">
             <TextField

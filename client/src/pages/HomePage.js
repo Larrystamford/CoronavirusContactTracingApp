@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import "./pages.css";
 import { useFetch } from "../customHooks/useFetch";
 import { SearchName } from "../components/SearchName";
@@ -7,10 +6,11 @@ import axios from "axios";
 import Button from "react-bootstrap/Button";
 import { ContactDisplay } from "./ContactDisplay";
 import { NewUsers } from "../components/NewUsers";
+import { SpinnerLoad } from "../components/SpinnerLoad";
+import Container from "react-bootstrap/Container";
 
 export const HomePage = () => {
   const { data, loading } = useFetch("/contacts");
-
   var varContactList = [];
 
   const [userId, setId] = React.useState(0);
@@ -54,6 +54,7 @@ export const HomePage = () => {
     for (var i = 0; i < rows.length; i++) {
       varContactList.push(rows[i].name);
     }
+    console.log(varContactList);
 
     axios
       .post("http://localhost:5000/contacts/dfs/" + userId, {
@@ -68,7 +69,7 @@ export const HomePage = () => {
       });
   };
 
-  if (loading) return null;
+  if (loading) return <SpinnerLoad />;
   return (
     <div>
       <SearchName
